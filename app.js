@@ -172,7 +172,7 @@ async function getProductImagesFromExcel(filePath) {
 // New function to write data to CSV
 async function writeDataToCSV() {
     const csvLines = ['productcode, promoImage'];
-    // database.executeQuery('INSERT INTO active_images (product_code, url,) VALUES (?, ?, ?)',);
+    database.executeQuery(`INSERT INTO 'active_images' ('product_code', 'url', 'promo') VALUES ('${detail.productcode}','${detail.promoImage}','test')`);
     processedProductsDetails.forEach(detail => {
         csvLines.push(`${detail.productcode},${detail.promoImage}`);
     });
