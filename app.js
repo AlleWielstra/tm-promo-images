@@ -17,7 +17,7 @@ let dataSet;
 // Function to run a Python script and await its completion
 async function runPythonScript(scriptPath, arguments = "") {
     try {
-        const { stdout, stderr } = await exec(`python "${scriptPath} ${arguments}"`);
+        const { stdout, stderr } = await exec(`py "${scriptPath} ${arguments}"`);
         console.log(`stdout: ${stdout}`);
         if (stderr) {
             console.error(`stderr: ${stderr}`);
