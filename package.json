@@ -1,0 +1,11 @@
+{
+  "name": "promoimages",
+  "version": "1.0.0",
+  "devDependencies": {
+    "axios": "^1.6.7",
+    "read-excel-file": "^5.7.1"
+  },
+  "dependencies": {
+    "mysql2": "^3.10.3"
+  }
+}
