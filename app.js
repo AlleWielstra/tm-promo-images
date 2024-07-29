@@ -207,5 +207,6 @@ if (process.argv.length < 3) {
     process.exit(1);
 }
 
-const filePaths = process.argv.slice(2);
-main(filePaths).catch(console.error);
+// const filePaths = process.argv.slice(2);
+console.log(process.argv);
+// main(filePaths).catch(console.error);
